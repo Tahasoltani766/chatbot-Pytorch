@@ -19,8 +19,11 @@
 1. این ریپازیتوری را کلون کنید:
 
    
-bash
+
    git clone https://github.com/Tahasoltani766/chatbot-Pytorch
-   cd chatbot-Pytorch
+
+
+
    
+
    

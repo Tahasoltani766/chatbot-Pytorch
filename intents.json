@@ -2,31 +2,98 @@
   "intents": [
     {
       "tag": "greeting",
-      "patterns": [
-        "Hi",
-        "Hey",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day"
-      ],
+      "patterns": ["Hello", "Hi", "Hey", "Greetings", "What's up"],
+      "responses": ["Hello! How can I assist you with Python?", "Hi there! Ready to solve some Python problems?"]
+    },
+    {
+      "tag": "python_intro",
+      "patterns": ["What is Python?", "Tell me about Python", "Explain Python programming"],
       "responses": [
-        "Hey :-)",
-        "Hello, thanks for visiting",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
+        "Python is a high-level, interpreted programming language known for its ease of learning and readability. It's widely used in web development, data analysis, artificial intelligence, and more."
       ]
     },
-    {"tag": "goodbye" ,
-      "patterns": [
-        "Bye",
-        "Good Bye",
-        "Have Good Time!"
-      ],
+    {
+      "tag": "variables",
+      "patterns": ["How do you declare variables in Python?", "What is a variable in Python?", "How do variables work in Python?"],
       "responses": [
-        "See you again",
-        "Good Bye"
+        "In Python, you can create a variable by assigning a value to it using the equals sign `=`. For example: `x = 10` or `name = 'John'`."
       ]
+    },
+    {
+      "tag": "data_types",
+      "patterns": ["What are data types in Python?", "Explain Python data types", "What kinds of data types does Python have?"],
+      "responses": [
+        "Python has several basic data types such as:\n1. `int` for integers (e.g., `x = 5`)\n2. `float` for floating-point numbers (e.g., `x = 5.5`)\n3. `str` for strings (e.g., `x = 'hello'`)\n4. `bool` for booleans (`True` or `False`)."
+      ]
+    },
+    {
+      "tag": "strings",
+      "patterns": ["How do you work with strings in Python?", "Explain strings in Python", "What is a string in Python?"],
+      "responses": [
+        "A string in Python is a sequence of characters, enclosed in either single or double quotes. For example: `x = 'hello'` or `y = \"world\"`. You can concatenate strings using the `+` operator, and slice them with `[]`."
+      ]
+    },
+    {
+      "tag": "lists",
+      "patterns": ["How do you create a list in Python?", "What is a list in Python?", "Explain Python lists"],
+      "responses": [
+        "In Python, a list is a collection of items that are ordered and changeable. Lists are created using square brackets. For example: `my_list = [1, 2, 3, 'Python']`."
+      ]
+    },
+    {
+      "tag": "loops",
+      "patterns": ["What are loops in Python?", "How do you write a loop in Python?", "Explain for loops in Python", "Explain while loops in Python"],
+      "responses": [
+        "Python supports two types of loops: `for` and `while`. A `for` loop is used to iterate over a sequence (like a list or string), and a `while` loop runs as long as a condition is true. Example of a `for` loop:\n```python\nfor i in range(5):\n    print(i)\n```\nExample of a `while` loop:\n```python\nx = 0\nwhile x < 5:\n    print(x)\n    x += 1\n```"
+      ]
+    },
+    {
+      "tag": "if_else",
+      "patterns": ["How do you write if statements in Python?", "What is an if statement in Python?", "Explain if-else in Python"],
+      "responses": [
+        "In Python, `if` statements are used for conditional execution. You can also use `else` for the alternative case and `elif` for additional conditions. Example:\n```python\nx = 10\nif x > 5:\n    print('Greater than 5')\nelse:\n    print('5 or less')\n```"
+      ]
+    },
+    {
+      "tag": "functions",
+      "patterns": ["How do you define a function in Python?", "What is a function in Python?", "How do functions work in Python?"],
+      "responses": [
+        "A function in Python is defined using the `def` keyword, followed by a function name and parentheses. Example:\n```python\ndef my_function():\n    print('Hello')\n```\nTo call the function, just use its name followed by parentheses: `my_function()`."
+      ]
+    },
+    {
+      "tag": "dictionaries",
+      "patterns": ["What is a dictionary in Python?", "How do you create a dictionary in Python?", "Explain Python dictionaries"],
+      "responses": [
+        "A dictionary in Python is a collection of key-value pairs. You can create a dictionary like this:\n```python\nmy_dict = {'name': 'John', 'age': 25}```\nYou can access values by their keys: `my_dict['name']`."
+      ]
+    },
+    {
+      "tag": "error_handling",
+      "patterns": ["How do you handle errors in Python?", "What is exception handling in Python?", "How do try-except blocks work in Python?"],
+      "responses": [
+        "In Python, you can handle errors using `try` and `except` blocks. Example:\n```python\ntry:\n    result = 10 / 0\nexcept ZeroDivisionError:\n    print('Cannot divide by zero!')\n```"
+      ]
+    },
+    {
+      "tag": "input_output",
+      "patterns": ["How do you get user input in Python?", "What is the input function in Python?", "How do you read and write files in Python?"],
+      "responses": [
+        "To get user input, use the `input()` function. Example:\n```python\nname = input('Enter your name: ')\n```\nTo read or write files, use the `open()` function. Example to read a file:\n```python\nwith open('file.txt', 'r') as file:\n    content = file.read()\n```"
+      ]
+    },
+    {
+      "tag": "classes",
+      "patterns": ["How do you create a class in Python?", "What is a class in Python?", "Explain object-oriented programming in Python"],
+      "responses": [
+        "In Python, a class is created using the `class` keyword. It serves as a blueprint for creating objects. Example:\n```python\nclass Dog:\n    def __init__(self, name):\n        self.name = name\n    def bark(self):\n        print(f'{self.name} is barking')\n```\nTo create an object: `my_dog = Dog('Buddy')`."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Goodbye", "See you later", "Bye", "Talk to you soon"],
+      "responses": ["Goodbye! Feel free to come back with more Python questions!", "See you later! Happy coding!"]
     }
   ]
 }
+s

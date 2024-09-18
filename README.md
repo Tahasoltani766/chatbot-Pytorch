@@ -1,29 +1,27 @@
+Here is the English translation:
+
+---
+
 # Chatbot with PyTorch
 
-این پروژه یک چت بات ساده است که با استفاده از فریم‌ورک PyTorch توسعه داده شده است که پاسخگوی سوالات پایتونی شما خواهد بود . هدف این پروژه ایجاد یک سیستم چت بات هوشمند است که قادر به پاسخگویی به سوالات کاربران باشد.
+This project is a simple chatbot developed using the PyTorch framework, designed to answer your Python-related questions. The goal of this project is to create an intelligent chatbot system capable of responding to user queries.
 
-## ویژگی‌ها
+## Features
 
-- **پاسخگویی به سوالات:** چت بات می‌تواند به سوالات متداول پاسخ دهد.
-- **یادگیری عمیق:** استفاده از مدل‌های یادگیری عمیق برای پردازش زبان طبیعی.
-- **سفارشی‌سازی:** قابلیت اضافه کردن سوالات و پاسخ‌های جدید به راحتی.
+- **Question Answering:** The chatbot can respond to frequently asked questions.
+- **Deep Learning:** Utilizes deep learning models for natural language processing.
+- **Customization:** Easily add new questions and answers.
 
-## پیش‌نیازها
+## Prerequisites
 
-برای اجرای این پروژه، شما به موارد زیر نیاز دارید:
+To run this project, you will need:
 
 - Python 3.11
 - PyTorch
-- NLTK (یا هر کتابخانه مشابه برای پردازش زبان طبیعی)
+- NLTK (or any similar library for natural language processing)
 
-1. این ریپازیتوری را کلون کنید:
+1. Clone this repository:
 
-   
-
-   git clone https://github.com/Tahasoltani766/chatbot-Pytorch
-
-
-
-   
-
-   
+    ```bash
+    git clone https://github.com/Tahasoltani766/chatbot-Pytorch
+    ```
